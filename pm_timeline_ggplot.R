@@ -5,7 +5,6 @@ library(ggplot2)
 library(lubridate)
 library(data.table)
 library(magrittr)
-library(extrafont)
 prime_ministers <-
   fromJSON(
     'https://raw.githubusercontent.com/TimelineConsortium/Timeline-Data/master/uk-prime-ministers.json'
@@ -67,11 +66,13 @@ p <-
     aes(x = decade,y = 0,color = party,label = paste(format(start_date,'%b %Y'),name))
     ) 
   
-  p <- p + labs(col = "Political Party") + theme_classic()
+  p <- p + labs(col = "Political Party") + theme_classic() 
+    
   
   p <- p + scale_color_manual(values = party_colours,
                      labels = parties,
                      drop = FALSE)
+  p <- p+guides(color = guide_legend(nrow = 1))
   
   p <- p + geom_hline(yintercept = 0,
              color = "black",
@@ -107,10 +108,10 @@ p <-
     data = decade_dt,
     aes(
       x = decade_range-years(5),
-      y = -0.3,
+      y = -0.2,
       label = decade_name,
     ),
-    size = 4,
+    size = 3,
     color = 'gray47',
     angle = 90
   )
@@ -118,7 +119,7 @@ p <-
 # Show project text
   p <- p +  geom_text(aes(y = text_position
                           
-                          ), size =3
+                          ), size =2.5
                       
                       )
 
