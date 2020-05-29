@@ -7,5 +7,5 @@ See https://medium.com/p/a6a4ac998710
 In  this repository you'll find:
 * Standalone ggplot R script
 * ggplot R script for Power BI
-* _script.R_ for use in PowerBI Custom Visual Build
+* _script.R_ for use in PowerBI Custom Visual Builder
 * PBIX file with static ggplot and interactive plotly report pages
