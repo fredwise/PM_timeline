@@ -24,6 +24,8 @@ setnames(
 #Dates
 prime_ministers[, start_date := ymd(substr(start_date, 0, 10))]
 prime_ministers[, end_date := ymd(substr(end_date, 0, 10))]
+prime_ministers[,name := iconv(name,to="ASCII//TRANSLIT")]
+prime_ministers[,name := gsub(pattern = 'A ', replacement = ' ', x = name)]
 setorder(prime_ministers,start_date)
 
 # Colours for the political parties
