@@ -142,9 +142,9 @@ g = ggplotly(p, tooltip = 'text') %>%
   layout(legend = list(
     orientation = 'h',
     y = 1.1,
-    x = 0.1,
+    x = 0.15,
     title = list(text = 'Party')
   ));
-
+g
 internalSaveWidget(g, 'out.html');
 ####################################################
