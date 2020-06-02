@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "author": {"name":"Fred Tasker","email":"fred@wisetechltd.com"},
+    "resources": [
+        {
+            "resourceId": "rId0",
+            "sourceType": 5,
+            "file": "resources/fredTimelineVis6D8A92B4C366405C90F678B9F4FA50C6.pbiviz.json"
+        }
+    ],
+    "visual": {"name":"fredTimelineVis","displayName":"fredTimelineVis","guid":"fredTimelineVis6D8A92B4C366405C90F678B9F4FA50C6","visualClassName":"Visual","version":"1.0.0","description":"Horizontal timeline built with R ggplot and plotly","supportUrl":"medium.com Fred Tasker","gitHubUrl":""},
+    "metadata": {
+        "pbivizjson": {
+            "resourceId": "rId0"
+        }
+    }  
+}
